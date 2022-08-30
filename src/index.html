@@ -9,14 +9,25 @@
             
             <h1><img class="logo" src="imagenes/logo.png" alt="Logo de Alura"></h1>
             <form action="">
-                <textarea  placeholder="Ingrese Texto aqui" class="text-area" ></textarea>
+                <textarea id="text" required  placeholder="Ingrese Texto aqui" class="text-area" ></textarea>
                 <p class="advertencia"><img src="imagenes/admiracion.png"></img> Solo letras minusculas y sin acentos</p>
-                <input type="submit" class="btn-encriptar" value="Encriptar"/> <input type="submit" class="desencriptar" value="Desencriptar">
+                <input type="button" onclick="encriptar()" value="Encriptar" class="btn-encriptar"> <input type="button" value="Desencriptar" onclick="desencriptar()" class="desencriptar" >
             </form>
-            
+
+            <div id="area1" class="area-response-active" >
+                <textarea readonly="readonly" id="textEncripted" class="textFinished"></textarea>
+                <input type="button" onclick="copy()" class="" value="Copiar">
+            </div>
+            <div id="area2" class="area-response">
+                <img class="muneco" src="imagenes/Muneco.png" alt="Imagen de muñeco">
+                <h2>Ningún mensaje fue encontrado</h2>
+                <p>Ingresa el texto que desees encriptar o desencriptar</p>
+            </div>
         </div>
         <div class="hide-mobile">
 
         </div>
     </body>
+    <footer class="pie"><p>&copy Yefri Marconi Gonzalez Vicente | ONE-ALURA LATAM</p></footer>
+    <script src="js/index.js"></script>
 </html>
